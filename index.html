@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------CUSTOM CSS-------------- -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ------------BOOTSTRAP-------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!------------------HEADER----------------->
+    <header>
+        <div class="header_bg_image">
+            <div class="container">
+                <div class="d-flex flex-column min-vh-100">
+
+                    <!-- <nav class="d-flex justify-content-end pt-4 navbar">
+
+                        <div class="dropdown d-lg-none d-block m_right_20px position-relative">
+
+                            <a href="#" class="nav_button">
+                                <svg width="40" height="40" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <path id="one"
+                                        d="M27.3602 11.4504C28.0506 11.4504 28.6102 10.8908 28.6102 10.2004C28.6102 9.51008 28.0506 8.95044 27.3602 8.95044V11.4504ZM8.80151 8.95044C8.11116 8.95044 7.55151 9.51008 7.55151 10.2004C7.55151 10.8908 8.11116 11.4504 8.80151 11.4504V8.95044ZM27.3602 8.95044H8.80151V11.4504H27.3602V8.95044Z"
+                                        fill="#FFFFFF" />
+
+                                    <path id="two"
+                                        d="M18.0809 17.25C18.7713 17.25 19.3309 16.6904 19.3309 16C19.3309 15.3096 18.7713 14.75 18.0809 14.75L18.0809 17.25ZM4.16187 14.75C3.47151 14.75 2.91187 15.3096 2.91187 16C2.91187 16.6904 3.47151 17.25 4.16187 17.25L4.16187 14.75ZM18.0809 14.75L4.16187 14.75L4.16187 17.25L18.0809 17.25L18.0809 14.75Z"
+                                        fill="#FFFFFF" />
+
+                                    <path id="three"
+                                        d="M27.3603 17.25C28.0506 17.25 28.6103 16.6904 28.6103 16C28.6103 15.3096 28.0506 14.75 27.3603 14.75V17.25ZM22.7206 14.75C22.0302 14.75 21.4706 15.3096 21.4706 16C21.4706 16.6904 22.0302 17.25 22.7206 17.25V14.75ZM27.3603 14.75H22.7206V17.25H27.3603V14.75Z"
+                                        fill="#F5330F" />
+
+                                    <path id="four"
+                                        d="M27.3602 23.0496C28.0506 23.0496 28.6102 22.4899 28.6102 21.7996C28.6102 21.1092 28.0506 20.5496 27.3602 20.5496V23.0496ZM8.80151 20.5496C8.11116 20.5496 7.55151 21.1092 7.55151 21.7996C7.55151 22.4899 8.11116 23.0496 8.80151 23.0496V20.5496ZM27.3602 20.5496H8.80151V23.0496H27.3602V20.5496Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+                            </a>
+
+                            <div class="dropdown_list d-none text-center">
+                                <a href="#">Home</a>
+                                <a href="#">About</a>
+                                <a href="#">HOSTING SERVICES</a>
+                                <a href="#">TESTIMONIAL</a>
+                                <a href="#" class="responsive_btn mt-2">LOG IN</a>
+                            </div>
+
+                        </div>
+
+
+                        <ul class="d-flex align-items-center d-none d-lg-flex">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">HOSTING SERVICES</a></li>
+                            <li><a href="#">TESTIMONIAL</a></li>
+                            <li class="d-flex align-items-center">
+                                <a href=""><img src="./assets/image/svg/header_insta _icon.svg" alt="insta _icon"></a>
+                                <a href=""><img src="./assets/image/svg/header_discord_icon.svg" alt="discord icon"></a>
+                                <a href=""><img src="./assets/image/svg/header_twitter_icon.svg" alt="twitter icon"></a>
+                            </li>
+                            <li><a href="#" class="page_button">LOG IN</a></li>
+                        </ul>
+
+                    </nav> -->
+
+
+                    <nav class="navbar navbar-expand-lg pt-4">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <!-- <span class="navbar-toggler-icon"></span> -->
+                                <svg width="40" height="40" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <path id="one"
+                                        d="M27.3602 11.4504C28.0506 11.4504 28.6102 10.8908 28.6102 10.2004C28.6102 9.51008 28.0506 8.95044 27.3602 8.95044V11.4504ZM8.80151 8.95044C8.11116 8.95044 7.55151 9.51008 7.55151 10.2004C7.55151 10.8908 8.11116 11.4504 8.80151 11.4504V8.95044ZM27.3602 8.95044H8.80151V11.4504H27.3602V8.95044Z"
+                                        fill="#FFFFFF" />
+
+                                    <path id="two"
+                                        d="M18.0809 17.25C18.7713 17.25 19.3309 16.6904 19.3309 16C19.3309 15.3096 18.7713 14.75 18.0809 14.75L18.0809 17.25ZM4.16187 14.75C3.47151 14.75 2.91187 15.3096 2.91187 16C2.91187 16.6904 3.47151 17.25 4.16187 17.25L4.16187 14.75ZM18.0809 14.75L4.16187 14.75L4.16187 17.25L18.0809 17.25L18.0809 14.75Z"
+                                        fill="#FFFFFF" />
+
+                                    <path id="three"
+                                        d="M27.3603 17.25C28.0506 17.25 28.6103 16.6904 28.6103 16C28.6103 15.3096 28.0506 14.75 27.3603 14.75V17.25ZM22.7206 14.75C22.0302 14.75 21.4706 15.3096 21.4706 16C21.4706 16.6904 22.0302 17.25 22.7206 17.25V14.75ZM27.3603 14.75H22.7206V17.25H27.3603V14.75Z"
+                                        fill="#F5330F" />
+
+                                    <path id="four"
+                                        d="M27.3602 23.0496C28.0506 23.0496 28.6102 22.4899 28.6102 21.7996C28.6102 21.1092 28.0506 20.5496 27.3602 20.5496V23.0496ZM8.80151 20.5496C8.11116 20.5496 7.55151 21.1092 7.55151 21.7996C7.55151 22.4899 8.11116 23.0496 8.80151 23.0496V20.5496ZM27.3602 20.5496H8.80151V23.0496H27.3602V20.5496Z"
+                                        fill="#FFFFFF" />
+                                </svg>
+
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                <div>
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                                        <li class="nav-item">
+                                            <a href="./index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="./about us.html">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#">
+                                                Hosting Services
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#">Testimonial</a>
+                                        </li>
+                                        <li class="nav-item d-flex align-items-center">
+                                            <a href="#" class="nav_link"><img
+                                                    src="./assets/image/svg/header_insta _icon.svg"
+                                                    alt="insta _icon"></a>
+                                            <a href="#"><img src="./assets/image/svg/header_discord_icon.svg"
+                                                    alt="discord icon"></a>
+                                            <a href="#"><img src="./assets/image/svg/header_twitter_icon.svg"
+                                                    alt="twitter icon"></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page_button" href="#">LOG IN</a>
+                                        </li>
+
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="flex-grow-1 d-flex align-items-center">
+                        <div class="row">
+
+                            <div class="col-xl-6 col-12 position-relative text-center text-xl-start">
+                                <div class="position-relative translate_N30px">
+                                    <img src="./assets/image/svg//btc fan.svg" alt="btc fan icon"
+                                        class="top-0 position-absolute left_n10 start-0 translate-middle d-none d-md-block rotate_360">
+                                </div>
+                                <article class="color_white position-relative">
+                                    <h1 class="ff_Montserrat fw_bold fs_2xl">Energy Guys gone Crypto</h1>
+                                    <p class="ff_Montserrat fw_regular fs_sm mt-3">Proin odio arcu, vulputate ut mi non,
+                                        malesuada
+                                        egestas arcu. Vivamus ultricies
+                                        ante
+                                        sit
+                                        amet ante molestie,
+                                    </p>
+                                    <div class="mt-5">
+                                        <a href="#" class="page_button">CONTACT US</a>
+                                        <a href="#" class="page_button2 ms-sm-2 mt-3 mt-sm-0">READ MORE</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-xl-6 col-12">
+                                <div>
+                                    <img src="./assets/image/svg/hero_image.svg" alt="person with mining machine"
+                                        class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--------------MAIN SECTION---------------->
+    <main>
+        <!--------------SECTION-1---------------->
+        <section>
+            <div class="position-relative">
+                <img src="./assets/image/svg/btnc position logo.svg" alt="bitcoin"
+                    class="position-absolute top-50 d-none d-md-block">
+                <div class="container">
+
+                    <div class="row min-vh-100 align-items-center py-5 justify-content-center">
+                        <div class="col-xl-6 col-12">
+                            <article class="text-center text-xl-start">
+                                <h2 class="ff_Montserrat fw_bold fs_lg color_Midnight_Blue">How It Works</h2>
+                                <p
+                                    class="ff_Montserrat fw_regular fs_sm color_black opacity_pt7 mt-3 max_w456px mx-auto mx-xl-0 text_justify">
+                                    Energex is
+                                    a
+                                    cryptocurrency
+                                    mining company focused
+                                    in Appalachia (PA, OH, WV). Our
+                                    management team combines 20 years of
+                                    experience in gas operations, engineering, and IT management. Our breadth of
+                                    experience
+                                    in the natural gas space allows
+                                    us to deliver vast amounts of low cost power with high uptime, maximizing mining
+                                    profitability</p>
+                                <a href="#" class="page_button mt-5">LEARN MORE</a>
+                            </article>
+                        </div>
+
+                        <div class="col-xl-6 col-9">
+
+                            <div class="row align-items-center">
+                                <div class="col-md-6 col-12">
+                                    <div class="pt-4">
+                                        <div
+                                            class="s1_card aspect_ratio_pt7 aspect_ratio_md_unset text-center text-md-start">
+                                            <img src="./assets/image/svg/create_accnt_icon.svg"
+                                                alt="sorry image not available">
+                                            <h4>Create Account</h4>
+                                            <p>Donec et nunc ac est dignissim rhoncus. Cras feugiat leo in iam varius,
+                                                sit
+                                                amet
+                                                luctus sapien interdum. Duis et </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-4">
+                                        <div
+                                            class="s1_card aspect_ratio_pt7 aspect_ratio_md_unset text-center text-md-start">
+                                            <img src="./assets/image/svg/buy&sell_icon.svg"
+                                                alt="sorry image not available">
+                                            <h4>Buy & Sell</h4>
+                                            <p>Donec et nunc ac est dignissim rhoncus. Cras feugiat leo in iam varius,
+                                                sit
+                                                amet
+                                                luctus sapien interdum. Duis et </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12 pt-4 pt-md-0">
+                                    <div class="">
+                                        <div
+                                            class="s1_card aspect_ratio_pt7 aspect_ratio_md_unset text-center text-md-starts">
+                                            <img src="./assets/image/svg/safe&secure_icon.svg"
+                                                alt="sorry image not available">
+                                            <h4>Safe & Secure</h4>
+                                            <p>Donec et nunc ac est dignissim rhoncus. Cras feugiat leo in iam varius,
+                                                sit
+                                                amet
+                                                luctus sapien interdum. Duis et </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <!--------------SECTION-2---------------->
+        <section>
+            <div class="s2_bg_image">
+                <div class="container py-5 min-vh-100 d-flex flex-column justify-content-center">
+
+                    <div class="text-center color_white ff_Montserrat">
+                        <h3 class="fw_bold fs_md">OUR SERVICES</h3>
+                        <h2 class="fw_bold fs_lg mt-2">All you need is here</h2>
+                        <p class="fs_sm fw_regular opacity_pt7 mt-1">A new home for your mining equipment</p>
+                    </div>
+
+
+                    <div class="row flex-xl-grow-1 flex-grow-0 align-items-center justify-content-center">
+
+                        <div class="col-xl-4 col-12 col-md-6 pt-4 pt-xl-0">
+                            <div class="s2_card">
+                                <article class="text-center">
+                                    <img src="./assets/image/svg/power icon.svg" alt="sorry icon not available">
+                                    <h4>POWER</h4>
+                                    <p>We utilize off-grid, natural gas resources to generate low cost energy to fuel
+                                        our
+                                        mining operation.</p>
+                                    <div class="d-flex justify-content-center align-items-center mt-3">
+                                        <a href="#">Read More</a>
+                                        <img src="./assets/image/svg/right_arrow_icon.svg" alt="right_arrow">
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-12 col-md-6 pt-4 pt-xl-0">
+                            <div class="s2_card">
+                                <article class="text-center">
+                                    <img src="./assets/image/svg/tech_service_icon.svg" alt="sorry icon not available">
+                                    <h4>TECH SERVICE</h4>
+                                    <p>Our team provides 24/7 support toward maintaining maximum uptime on power
+                                        generation.
+                                    </p>
+                                    <div class="d-flex justify-content-center align-items-center mt-3">
+                                        <a href="#">Read More</a>
+                                        <img src="./assets/image/svg/right_arrow_icon.svg" alt="right_arrow">
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-12 col-md-6 flex-md-grow-0 pt-4 pt-xl-0">
+                            <div class="s2_card">
+                                <article class="text-center">
+                                    <img src="./assets/image/svg/monitoring_icon.svg" alt="sorry icon not available">
+                                    <h4>MONITORING</h4>
+                                    <p>Our cloud-based monitoring platform lets you monitor your mining performance,
+                                        uptime,
+                                        and rewards.</p>
+                                    <div class="d-flex justify-content-center align-items-center mt-3">
+                                        <a href="#">Read More</a>
+                                        <img src="./assets/image/svg/right_arrow_icon.svg" alt="right_arrow">
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--------------SECTION-3---------------->
+        <section>
+
+            <div class="container py-5">
+                <div class="d-flex flex-column min-vh-100">
+
+                    <div class="text-center">
+                        <h4 class="color_Midnight_Blue fs_md fw_bold">OUR FEATURE</h4>
+                        <h2 class="color_Midnight_Blue fs_lg fw_bold">Featured ASICs</h2>
+                    </div>
+
+                    <div class="row flex-grow-1 align-items-center justify-content-center">
+                        <div class="col-xl-4 col-sm-6 col-12 pt-4 pt-xl-0">
+                            <div class="s3_card text-center text-xl-start">
+                                <img src="./assets/image/svg/goldshell_hs5.svg" alt="goldshell hs5" class="w-100">
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h3>Goldshell HS5</h3>
+                                    <p>2.7 TH/s /2650w</p>
+                                </div>
+                                <strong>$6,2536</strong>
+                                <div
+                                    class="d-flex align-items-center mt-4 justify-content-center justify-content-xl-start">
+                                    <a href="#" class="page_button">SHOP NOW</a>
+                                    <a href="#" class="page_button2 ms-3">DETAILS</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 col-12 pt-4 pt-xl-0">
+                            <div class="s3_card text-center text-xl-start">
+                                <img src="./assets/image/svg/goldshell_hs5.svg" alt="goldshell hs5" class="w-100">
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h3>Goldshell HS5</h3>
+                                    <p>2.7 TH/s /2650w</p>
+                                </div>
+                                <strong>$6,2536</strong>
+                                <div
+                                    class="d-flex align-items-center mt-4 justify-content-center justify-content-xl-start">
+                                    <a href="#" class="page_button">SHOP NOW</a>
+                                    <a href="#" class="page_button2 ms-3">DETAILS</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-sm-6 col-12 pt-4 pt-xl-0">
+                            <div class="s3_card text-center text-xl-start">
+                                <img src="./assets/image/svg/goldshell_hs5.svg" alt="goldshell hs5" class="w-100">
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h3>Goldshell HS5</h3>
+                                    <p>2.7 TH/s /2650w</p>
+                                </div>
+                                <strong>$6,2536</strong>
+                                <div
+                                    class="d-flex align-items-center mt-4 justify-content-center justify-content-xl-start">
+                                    <a href="#" class="page_button">SHOP NOW</a>
+                                    <a href="#" class="page_button2 ms-3">DETAILS</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--------------SECTION-4---------------->
+        <section>
+            <div class="s4_bg_image">
+                <div class="max_w_820px mx-auto py-5 px_12">
+                    <div
+                        class="d-flex align-items-center min_vh_50 col_gap_50px color_white ff_Montserrat flex-column flex-md-row justify-content-center">
+                        <div>
+                            <img src="./assets/image/svg/double_commas_logo.svg" alt="double inverted commas">
+                        </div>
+                        <div class="text-center text-md-start mt-4 mt-md-0">
+                            <img src="./assets/image/svg/small_discs.svg" alt="slider discs">
+                            <p class="mt-3 max_w_820px fw_regular fs_sm text_justify">Donec et nunc ac est
+                                dignissim
+                                rhoncus. Cras feugiat leo in diam
+                                varius, sit
+                                amet luctus
+                                sapien interdum. Duis et
+                                imperdiet metus, ut ultricies libero. Vestibulum pharetra leo in dui hendrerit pretium
+                                tincidunt ut ipsum. Phasellus nec
+                                cursus dui. Phasellus tristique erat non lacus placerat dapibus. Maecenas accumsan massa
+                                elit,</p>
+                            <div
+                                class="d-flex align-items-center mt-4 border_md_left justify-content-center justify-content-md-start  mt-md-3">
+                                <div class="ms-3">
+                                    <img src="./assets/image/svg/joseph_alan logo.svg" alt="">
+                                </div>
+                                <div class="ms-3">
+                                    <p class="fw_semibold fs_sm">Joseph Allan</p>
+                                    <p class="fw_regular fs_sm opacity_pt7">CEO Silver Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--------------SECTION-5---------------->
+        <section>
+
+            <div class="container">
+                <div class="d-flex flex-column min-vh-100 py-5 justify-content-center">
+                    <div>
+                        <h2 class="text-center fw_bold fs_lg color_Midnight_Blue mb-4 mb-xl-0">Our Team</h2>
+                    </div>
+
+                    <div class="row align-items-center flex-xl-grow-1 justify-content-center">
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="s5_card">
+                                <div>
+                                    <img src="./assets/image/svg/daniel caestro.svg" alt="sorry image not available"
+                                        class="w-100">
+                                </div>
+                                <article>
+                                    <h3 class="fs_md">Daniel Castro</h3>
+                                    <p class="fs_sm">
+                                        CEO & Lead Blockchain
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 pt-4 pt-sm-0">
+                            <div class="s5_card">
+                                <div>
+                                    <img src="./assets/image/svg/alvaro denis.svg" alt="sorry image not available"
+                                        class="w-100">
+                                </div>
+                                <article>
+                                    <h3 class="fs_md">Alvaro Deniss</h3>
+                                    <p class="fs_sm">
+                                        Blochain App Developer
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 pt-4 pt-lg-0">
+                            <div class="s5_card">
+                                <div>
+                                    <img src="./assets/image/svg/carlos ronaldo.svg" alt="sorry image not available"
+                                        class="w-100">
+                                </div>
+                                <article>
+                                    <h3 class="fs_md">Carlos Ronaldo</h3>
+                                    <p class="fs_sm">
+                                        Community Management
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 pt-4 pt-xl-0">
+                            <div class="s5_card">
+                                <div>
+                                    <img src="./assets/image/svg/carlos ronaldo 2.svg" alt="sorry image not available"
+                                        class="w-100">
+                                </div>
+                                <article>
+                                    <h3 class="fs_md">Carlos Ronaldo</h3>
+                                    <p class="fs_sm">
+                                        Community Management
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--------------SECTION-6---------------->
+        <section>
+            <div class="s6_bg_image">
+                <div class="container py-5 py-lg-0">
+
+                    <div class="row color_white flex-lg-row flex-column-reverse min-vh-100 align-items-center">
+
+                        <div
+                            class="col-lg-5 col-12 d-flex flex-column  justify-content-center row_gap_50px align-items-center align-items-lg-start mt-5 mt-lg-0">
+                            <div class="text-center text-lg-start">
+                                <a href="#"><img src="./assets/image/svg/email help icon.svg"
+                                        alt="sorry image not available"></a>
+                                <p class="fw_regular fs_sm opacity_pt7 mt-3">Cras eu elementum est, nec commodo tellus.
+                                    Praesent</p>
+                            </div>
+                            <div class="text-center text-lg-start">
+                                <a href="tel:0934 343 343"><img src="./assets/image/svg/tel icon.svg"
+                                        alt="telephone"></a>
+                                <p class="fw_regular fs_sm opacity_pt7 mt-3">Call Us 0934 343 343</p>
+                            </div>
+                            <div class="text-center text-lg-start">
+                                <a href="mailto:Emailinfo@token.com"><img src="./assets/image/svg/email us icon.svg"
+                                        alt=""></a>
+                                <p class="fw_regular fs_sm opacity_pt7 mt-3">Emailinfo@token.com</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-7 col-12  d-flex flex-column justify-content-center row_gap_50px text-center text-lg-start">
+                            <h2 class="fw_bold fs_lg">Contact Us</h2>
+                            <input type="text" placeholder="Your Name" class="w-100 s6_text_box">
+                            <input type="text" placeholder="Your Email" class="w-100 s6_text_box">
+                            <!-- <input type="text" placeholder="Your Message" class="w-100 s6_text_box"> -->
+                            <textarea name="Your Message" id="" cols="20" rows="5" class="s6_text_box s6_text_area"
+                                placeholder="Your Message"></textarea>
+                            <p><a href=" #" class="page_button">SEND MESSAGE</a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-----------------FOOTER----------------->
+    <footer>
+
+        <div class="container min_vh_50 d-flex flex-column justify-content-center">
+            <div class="ff_Montserrat">
+                <div class="text-center">
+                    <a href="#"><img src="./assets/image/svg/ftr energx logo.svg" alt="energx logo"></a>
+                    <p class="color_black fw_regular fs_sm opacity_pt7 mt-3 max_w376px mx-auto">Donec et nunc ac est
+                        dignissim rhoncus.
+                        Cras
+                        feugiat leo in
+                        iam
+                        varius, sit
+                        amet luctus sapien
+                    </p>
+                    <ul class="d-flex align-items-center justify-content-center col_gap_30px mt-3 flex-wrap">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">HOSTING SERVICES</a></li>
+                        <li><a href="">TESTIMONIAL</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center col_gap_20px mt-3">
+                        <a href="#"><img src="./assets/image/svg/ftr insta icon.svg" alt="instagram"></a>
+                        <a href="#"><img src="./assets/image/svg/ftr discord icon.svg" alt="discord"></a>
+                        <a href="#"><img src="./assets/image/svg/ftr twiter icon.svg" alt="twitter"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="border_btm_ftr"></div>
+        <p class="text-center py-2 fw_regular fs_xs color_black opacity_pt7">@Copyright2022</p>
+
+    </footer>
+
+
+
+
+    <!-- ------------JAVASCRIPT-------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
